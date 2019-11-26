@@ -2,6 +2,7 @@ import random
 
 GENES = "abcdefghijklmnopqrstuvwxyz123456789.#{}[]()"
 TARGET = "vimaljamesprogram"
+POPULATION_SIZE = 50
 
 class Individual:
   
@@ -53,7 +54,7 @@ def main():
   generation_count = 0
 
   #Generate Initial Random Population
-  for _ in range(21):
+  for _ in range(POPULATION_SIZE):
     population.append(Individual())
 
   #Show initial population
